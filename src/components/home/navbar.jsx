@@ -204,7 +204,7 @@
 // export default Navbar
 
 
-"use client"
+// "use client"
 
 import React, { useState, useEffect, useRef } from "react"
 import { motion, AnimatePresence } from "framer-motion"
@@ -292,7 +292,7 @@ function Navbar() {
         {/* LOGO */}
         <motion.div variants={logoVariants} initial="hidden" animate="visible" whileHover="hover">
           <Link to="/home" onClick={scrollToTop}>
-            <img src={logo || "/placeholder.svg"} alt="Logo" className="h-25 w-auto object-contain" />
+            <img src={logo} alt="Logo" className="h-25 w-auto object-contain" />
           </Link>
         </motion.div>
 
